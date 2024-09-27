@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista função</title>
+</head>
+<body>
+    <script>
+
+        var num1 = parseFloat(prompt("Insira o primeiro valor "))
+        var num2 = parseFloat(prompt("Insira o segundo valor "))
+        var simbolo = prompt("Insira um símbolo (+, -, / ou *) ")
+
+        function calcular(num1, num2) {
+            if (simbolo == '+'){
+                var resultado = num1 + num2 
+            }
+            else if (simbolo == '-'){
+                 var resultado = num1 - num2
+            }
+            else if (simbolo == '/'){
+                var resultado = num1 / num2
+            }
+            else if (simbolo == '*'){
+                var resultado = num1 * num2
+            }
+            return resultado
+            
+        }
+
+        alert(calcular(num1, num2))    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista função</title>
+</head>
+<body>
+    <script>
+
+        function calcular(num1) {
+            if (num1 > 30){
+                var resultado = "Ainda falta muito para o natal."
+            }
+            else if (num1 <= 30){
+                var resultado = "Oba, quase férias!"
+            }
+
+            alert(resultado)
+        }   
+        var num1 = parseFloat(prompt("Quantidade de dias restantes é "))
+        calcular(num1) //chama a função
+
+    </script>
+</body>
+</html>

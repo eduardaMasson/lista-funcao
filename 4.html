@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista função</title>
+</head>
+<body>
+    <script>
+
+        var nota1 = parseFloat(prompt("Insira a nota 1 "))
+        var nota2 = parseFloat(prompt("Insira a nota 2 "))
+        var nota3 = parseFloat(prompt("Insira a nota 3 "))
+        var letra = prompt("Insira a letra (A ou P) ")
+
+        function calcular1(nota1, nota2, nota3) {
+            var media1 = (nota1 + nota2 + nota3) / 3
+            return media1
+        }
+
+        function calcular2(nota1, nota2, nota3) {
+           var media2 = ((nota1 * 5) + (nota2 * 3) + (nota3 * 2)) / 10
+            return media2
+        }
+
+        if (letra == 'A'){
+            var resultado = calcular1(nota1, nota2, nota3) //invocar a função
+            alert(resultado) //exibir o parâmetro/bloco de código
+        }
+         else if (letra == 'P') {
+          var resultado = calcular2(nota1, nota2, nota3) //invocar a função
+        alert(resultado) //exibir o parâmetro/bloco de código  
+        }
+
+        else {
+            alert("Valor inválido")
+        }
+        
+
+    </script>
+</body>
+</html>

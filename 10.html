@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista função</title>
+</head>
+<body>
+    <script>
+
+        function calcular(num1) {
+           var string = String(num1) 
+           var separar = string.split("") //separar os números
+           var inverter = separar.reverse() //inverte o valor
+           var contar = ''
+           for (i in inverter){
+                contar = contar + inverter[i]
+           }
+          return contar
+        }
+          
+        var num1 = parseFloat(prompt("Insira o número "))
+        alert(calcular(num1)) 
+        
+    </script>
+</body>
+</html>

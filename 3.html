@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista função</title>
+</head>
+<body>
+    <script>
+
+        function criar(n1, n2) {
+            var primeiroDigito = n1.toString()[0]; // primeiro dígito de n1
+            var ultimoDigito = n2.toString()[1];   // ultimo dígito de n2
+            return parseInt(primeiroDigito + ultimoDigito) //devolver
+        }
+
+        var resultado = criar(23, 89) //invocar a função
+        alert(resultado) //exibir o parâmetro/bloco de código
+
+    </script>
+</body>
+</html>
